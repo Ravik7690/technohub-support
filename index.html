@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechnoHub - IT Services & Training</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8') no-repeat center;
+      background-size: cover;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    .contact-box {
+      background: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #004080;
+    }
+    .pc-image {
+      text-align: center;
+      margin: 40px auto;
+    }
+    .pc-image img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #004080;
+    }
+    .courses,
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #004080;
+    }
+    .contact-form {
+      background: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 10px auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      display: block;
+    }
+    .contact-form form button {
+      background: #004080;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TechnoHub IT Services & Training</h1>
+    <p>Contact: +91 7690971305 | technohubservices@gmail.com</p>
+  </header>
+
+  <section class="hero">
+    <h1>Reliable Tech Support & Training</h1>
+    <p>Door-to-Door & Online Services for PC Repair, Training & Troubleshooting</p>
+  </section>
+
+  <div class="contact-box">
+    📞 Call / WhatsApp: +91 7690971305 | Available 9am - 9pm
+  </div>
+
+  <div class="pc-image">
+    <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/office-606761_1280.jpg" alt="PC Setup">
+  </div>
+
+  <section class="section">
+    <h2>Our IT Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>PC Formatting & Windows</h3>
+        <p>Clean OS installation with drivers & software setup.</p>
+      </div>
+      <div class="card">
+        <h3>Data Recovery</h3>
+        <p>Retrieve deleted/lost files from any device.</p>
+      </div>
+      <div class="card">
+        <h3>Cyber Security</h3>
+        <p>Antivirus, firewall setup & protection from threats.</p>
+      </div>
+      <div class="card">
+        <h3>Login / Lock Bypass</h3>
+        <p>Unlock password protected PCs and fix boot issues.</p>
+      </div>
+      <div class="card">
+        <h3>Router & Network Setup</h3>
+        <p>LAN/WiFi setup, IP conflict resolution & more.</p>
+      </div>
+      <div class="card">
+        <h3>Form & ID Services</h3>
+        <p>Support for Aadhaar, PAN, Voter ID, & Govt Forms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Courses We Offer</h2>
+    <div class="courses">
+      <div class="card">
+        <h3>CCC Course</h3>
+        <p>Govt certified computer course. Duration: 3 months.</p>
+      </div>
+      <div class="card">
+        <h3>Cyber Security</h3>
+        <p>Protect yourself from hackers & cyber attacks. Duration: 2 months.</p>
+      </div>
+      <div class="card">
+        <h3>Hardware & Networking</h3>
+        <p>PC build, LAN/WAN setup & troubleshooting. Duration: 3 months.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <h2>Send Your Enquiry</h2>
+    <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <textarea name="message" rows="5" placeholder="Your Query..." required></textarea>
+      <button type="submit">Submit Enquiry</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917690971305?text=Hello%20TechnoHub,%20I%20need%20IT%20support%20or%20course%20info." target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;">
+    💬
+  </a>
+
+  <footer>
+    <p>© 2025 TechnoHub | All Rights Reserved | +91 7690971305</p>
+  </footer>
+
+</body>
+</html>
