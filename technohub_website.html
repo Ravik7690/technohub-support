@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechnoHub — IT Support & Courses</title>
+  <style>
+    :root{
+      --blue:#0b66c3;--dark:#0b1b34;--light:#f6f8fb;--accent:#09b27d;--orange:#ff8c3a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--light);color:#1f2a3a}
+    a{color:var(--blue);text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+    /* NAV */
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e6ebf3}
+    .nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:40px;width:auto}
+    .brand .name{line-height:1}
+    .brand .name b{display:block;font-size:18px;color:var(--dark)}
+    .brand .name small{color:#5f6b7a}
+    .links a{margin-left:18px;font-weight:600;color:#2e3b4e}
+    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:12px;font-weight:700}
+
+    /* HERO */
+    .hero{background:linear-gradient(135deg,#0b66c3, #073b7a);color:#fff}
+    .hero-in{display:grid;grid-template-columns:1.2fr;gap:16px;padding:56px 0}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+    .pill{background:rgba(255,255,255,.15);backdrop-filter:saturate(140%);
+      padding:8px 12px;border-radius:999px;font-size:12px}
+    .hero h1{font-size:34px;line-height:1.15;margin:6px 0}
+    .hero p{font-size:16px;color:#e2e9f8;max-width:720px}
+    .hero .actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-block;border-radius:12px;padding:12px 16px;font-weight:700}
+    .btn.primary{background:#fff;color:#073b7a}
+    .btn.whatsapp{background:#22c55e;color:#fff}
+
+    /* SECTIONS */
+    section{padding:40px 0}
+    h2{margin:0 0 6px 0;color:var(--dark)}
+    .muted{color:#5f6b7a;margin:0 0 22px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:760px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:#fff;border:1px solid #e6ebf3;border-radius:18px;padding:16px;box-shadow:0 2px 8px rgba(13,41,80,.04)}
+    .card h3{margin:0 0 6px 0}
+    .list{padding-left:18px;margin:8px 0}
+
+    /* OFFER */
+    .offer{background:linear-gradient(90deg,var(--orange),#ffa95e);color:#fff;border-radius:18px;padding:18px}
+
+    /* CONTACT */
+    footer{background:#0e1a2b;color:#c7d2e4;margin-top:24px}
+    footer .wrap{display:grid;gap:14px;padding:22px 16px}
+    @media(min-width:760px){footer .wrap{grid-template-columns:1.2fr .8fr}}
+    .foot-cta a{margin-right:8px}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="technohub-logo.png" alt="TechnoHub logo"/>
+        <div class="name"><b>TechnoHub</b><small>Ahmedabad City, Gujarat</small></div>
+      </div>
+      <nav class="links">
+        <a href="#services">Support</a>
+        <a href="#courses">Courses</a>
+        <a href="#enquiry" class="cta">Quick Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <div class="badges">
+          <span class="pill">Door‑to‑Door Support</span>
+          <span class="pill">8 AM – 10 PM</span>
+          <span class="pill">100% Satisfaction</span>
+        </div>
+        <h1>Same‑Day <span style="color:#ffd166">IT Support</span> & Professional Training</h1>
+        <p>Fast, affordable computer repair, networking, security, data recovery — plus job‑ready IT courses (C, C++, HTML, Web Design, and more).</p>
+        <div class="actions">
+          <a class="btn primary" href="tel:+917690971305">Call +91 76909 71305</a>
+          <a class="btn whatsapp" href="https://wa.me/917690971305?text=Hi%20TechnoHub%2C%20I%20need%20support%20or%20course%20details." target="_blank">WhatsApp / DM</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUPPORT SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <h2>Door‑to‑Door IT Support</h2>
+      <p class="muted">Transparent service, certified technicians, quick turnaround in Ahmedabad.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Computer & Laptop Repair</h3>
+          <ul class="list">
+            <li>Slow PC optimization & OS install (Windows/Linux)</li>
+            <li>Driver updates & hardware diagnostics</li>
+            <li>On‑site repair & parts replacement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Networking Solutions</h3>
+          <ul class="list">
+            <li>Router/Wi‑Fi setup & troubleshooting</li>
+            <li>LAN cabling, IP addressing & subnet basics</li>
+            <li>VPN & Remote Desktop configuration</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Printer & Peripherals</h3>
+          <ul class="list">
+            <li>Printer install & repair, scanner setup</li>
+            <li>External devices configuration</li>
+            <li>Priority on‑site support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data Management</h3>
+          <ul class="list">
+            <li>Backup & restore, external storage</li>
+            <li>Cloud setup (Drive/OneDrive)</li>
+            <li>Accidental delete recovery</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Security & Antivirus</h3>
+          <ul class="list">
+            <li>Licensed AV install & firewall setup</li>
+            <li>Malware cleanup & hardening</li>
+            <li>Phishing/ransomware awareness</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AMC (Annual Maintenance)</h3>
+          <ul class="list">
+            <li>Quarterly health checks</li>
+            <li>Preventive maintenance</li>
+            <li>Priority response</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="offer" style="margin-top:18px">
+        <b>Flat 20% OFF on First Service</b> — Valid till <b>30 Sept</b>. Book now to get priority slot the same day.
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" style="background:#fff">
+    <div class="wrap">
+      <h2>Courses at TechnoHub</h2>
+      <p class="muted">Advanced, practical curriculum designed for jobs & freelancing. Online / Offline / Hybrid.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Core IT Support Tracks</h3>
+          <ul class="list">
+            <li>CCC Advance</li>
+            <li>Hardware Troubleshooting (Advanced)</li>
+            <li>Mobile & System Security</li>
+            <li>Networking (Advanced)</li>
+            <li>IT Fundamentals</li>
+            <li>Recovery Forensic Tools</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Programming & Web</h3>
+          <ul class="list">
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+            <li>HTML</li>
+            <li>Web Design</li>
+          </ul>
+          <p class="muted">Duration: up to 2 months • Practical tasks & checklists included</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section id="enquiry">
+    <div class="wrap">
+      <h2>Quick Enquiry</h2>
+      <p class="muted">Fill the form and our team will contact you within 24 hours.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Google Form</h3>
+          <p><a class="btn primary" href="https://forms.gle/wYSbNhMFjx6UVmgB7" target="_blank">Open Enquiry Form</a></p>
+        </div>
+        <div class="card">
+          <h3>WhatsApp / DM</h3>
+          <p>Available 8 AM – 10 PM, 7 days a week.</p>
+          <p>
+            <a class="btn whatsapp" target="_blank" href="https://wa.me/917690971305?text=Hi%20TechnoHub%2C%20I%20need%20support%20or%20course%20details.">Chat on WhatsApp</a>
+            <a class="btn" style="background:#0b66c3;color:#fff;margin-left:8px" href="tel:+917690971305">Call Now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div>
+        <b>TechnoHub</b><br/>
+        Ahmedabad City, Gujarat • Phone: +91 76909 71305
+      </div>
+      <div class="foot-cta">
+        <a class="btn whatsapp" href="https://wa.me/917690971305" target="_blank">WhatsApp</a>
+        <a class="btn" style="background:#fff;color:#0b66c3" href="#services">Support</a>
+        <a class="btn" style="background:#fff;color:#0b66c3" href="#courses">Courses</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
